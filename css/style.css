@@ -3,7 +3,11 @@
 
 body {
   color: #333;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato';
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -62,7 +66,7 @@ main {
 
 .BoltTheme-inner > h1 {
   color: #74cfae;
-  font-family: 'Helvetica Neue','Helvetica','Arial',sans-serif;
+  font-family: 'Raleway';
   font-size: 90px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -86,6 +90,10 @@ main {
 
 .what-inner img {
   padding-top: 50px;
+}
+
+.what-inner h1 , .ourlatest-inner > h1 , .ourskills-inner > h1 {
+  font-family: 'Raleway';
 }
 
 .what-inner h1 {
@@ -134,19 +142,27 @@ main > .ourlatest {
   margin-top: 80px;
 }
 
-.ourlatest-text {
-  font-size: 20px;
-  line-height: 24px;
+.ourlatest-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 90px;
-  margin-right: 90px;
   padding-bottom: 70px;
 }
 
+.ourlatest-text {
+  font-family: 'Raleway';
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .ourlatest-icon {
+  align-self: flex-start;
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   padding: 14px 20px;
+  margin-left: 90px;
 }
 
 main > .ourskills {
