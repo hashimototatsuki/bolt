@@ -18,7 +18,7 @@ header {
   left: 0;
   padding-top: 15px;
   padding-bottom: 15px;
-  z-index: 1;
+  z-index: 100;
 }
 
 .inner {
@@ -69,12 +69,12 @@ main {
   font-family: 'Raleway';
   font-size: 90px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .BoltTheme-inner > p {
   color: #c0c0c0;
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .main > .what {
@@ -92,18 +92,22 @@ main {
   padding-top: 50px;
 }
 
-.what-inner h1 , .ourlatest-inner > h1 , .ourskills-inner > h1 {
+.what-inner h2 , .ourlatest-inner > h2 , .ourskills-inner > h2 {
   font-family: 'Raleway';
 }
 
-.what-inner h1 {
+.what .what-text {
+  width: 660px;
+}
+
+.what-inner h2 {
   font-size: 24px;
-  margin-bottom: 35px;
 }
 
 .what-inner p {
   font-size: 20px;
   line-height: 24px;
+  margin-top: 35px;
 }
 
 main > .ourlatest {
@@ -111,9 +115,12 @@ main > .ourlatest {
   padding-top: 60px;
 }
 
-.ourlatest-inner > h1 , .ourskills-inner > h1 {
+.ourlatest-inner > h2 , .ourskills-inner > h2 {
   font-size: 24px;
-  margin-bottom: 40px;
+}
+
+.ourlatest-container , .ourskills-container {
+  margin-top: 40px;
 }
 
 .container {
@@ -133,30 +140,35 @@ main > .ourlatest {
   opacity: 1;
 }
 
-.ourlatest .ourlatest-img:nth-child(3n-1) {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.ourlatest .ourlatest-img:nth-child(n+4) {
+.ourlatest .ourlatest-img {
   margin-top: 80px;
+  margin-left: 100px;
 }
 
-.ourlatest-container {
+.ourlatest .ourlatest-img:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.ourlatest .ourlatest-img:first-child , .ourlatest .ourlatest-img:nth-child(3n+4) {
+margin-left: 0;
+}
+
+.ourlatest-container-secondary {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 90px;
   padding-bottom: 70px;
 }
 
 .ourlatest-text {
+  width: 620px;
   font-family: 'Raleway';
   font-size: 20px;
   line-height: 24px;
 }
 
 .ourlatest-icon {
+  width: 80px;
   align-self: flex-start;
   background-color: #74cfae;
   color: #fff;
@@ -188,15 +200,18 @@ main > .sns {
   padding-bottom: 200px;
 }
 
-.sns .sns-icon {
+.sns .sns-text {
   color: #74cfae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 185px;
   height: 100px;
   transition-property: background;
   transition-duration: .3s;
 }
 
-.sns-icon:hover {
+.sns-text:hover {
   background-color: #fff;
 }
 
