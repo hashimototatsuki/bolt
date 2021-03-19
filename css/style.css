@@ -7,7 +7,12 @@ body {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
+}
+
+.font-Raleway {
+  font-family: 'Raleway';
 }
 
 header {
@@ -66,7 +71,6 @@ main {
 
 .BoltTheme-inner > h1 {
   color: #74cfae;
-  font-family: 'Raleway';
   font-size: 90px;
   font-weight: 700;
 }
@@ -90,10 +94,6 @@ main {
 
 .what-inner img {
   padding-top: 50px;
-}
-
-.what-inner h2 , .ourlatest-inner > h2 , .ourskills-inner > h2 {
-  font-family: 'Raleway';
 }
 
 .what .what-text {
@@ -162,7 +162,6 @@ margin-left: 0;
 
 .ourlatest-text {
   width: 620px;
-  font-family: 'Raleway';
   font-size: 20px;
   line-height: 24px;
 }
