@@ -60,11 +60,11 @@ header {
 
 main {
   width: 100%;
+  padding-top: 70px;
 }
 
 .main > .Bolt {
   background-color: #f2f2f2;
-  margin-top: 70px;
   padding-top: 250px;
   padding-bottom: 250px;
 }
@@ -84,6 +84,7 @@ main {
 .main > .what {
   background-color: #74cfae;
   color: #fff;
+  padding-top: 50px;
 }
 
 .what-inner {
@@ -92,12 +93,11 @@ main {
   align-items: center;
 }
 
-.what-inner img {
-  padding-top: 50px;
-}
-
 .what .what-text {
   width: 660px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-30%);
 }
 
 .what-inner h2 {
@@ -113,6 +113,7 @@ main {
 main > .ourlatest {
   background-color: #f2f2f2;
   padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .ourlatest-inner > h2 , .ourskills-inner > h2 {
@@ -157,7 +158,6 @@ margin-left: 0;
   display: flex;
   justify-content: center;
   margin-top: 90px;
-  padding-bottom: 70px;
 }
 
 .ourlatest-text {
