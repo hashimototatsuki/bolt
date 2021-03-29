@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*PC表示*/
+/*PC表示(ベース)*/
 body {
   color: #333;
   font-family: 'Lato';
@@ -235,15 +235,8 @@ footer > .footer-inner {
 }
 
 
-
-/*PC表示(1200px~)*/
-@media (min-width: 1200px) {
-
-}
-
-
-/*タブレット表示(768px~1199px)*/
-@media (min-width: 768px) and (max-width: 1199px) {
+/*スマホ表示かつタブレット表示(~1199px)*/
+@media (max-width: 1199px) {
 
   .what {
     padding-bottom: 25px;
@@ -294,9 +287,12 @@ footer > .footer-inner {
     margin-top: 88px;
   }
 
-  .ourskillst-text:first-child {
-    margin-top: 0;
-  }
+}
+
+
+/*タブレット表示(768px~1199px)*/
+@media (min-width: 768px) and (max-width: 1199px) {
+
 }
 
 
@@ -324,54 +320,12 @@ footer > .footer-inner {
     font-size: 80px;
   }
 
-  .what {
-    padding-bottom: 25px;
-  }
-
-  .what-inner {
-    flex-direction: column;
-  }
-
-  .what .what-text {
-    max-width: 950px;
-    padding: 0 15px;
-    margin-top: 20px;
-    transform: none;
-  }
-
-  .ourlatest-container , .ourskills-container{
-    flex-direction: column;
-  }
-
-  .ourlatest .ourlatest-img {
-    margin: 0;
-  }
-
-  .ourlatest .ourlatest-img:nth-child(3n+4) {
-    margin-top: 80px;
-  }
-
-  .ourlatest-container-secondary {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-  }
-
   .ourlatest-text {
-    max-width: 1100px;
-    padding: 0 15px;
     font-size: 16px;
   }
 
-  .ourlatest-icon {
-    align-self: center;
-    margin-left: 0;
-    margin-top: 40px;
-  }
-
-  .ourskillst-text {
-    margin: 0;
-    margin-top: 88px;
+  .ourskillst-text:first-child {
+    margin-top: 0;
   }
 
   main > .sns {
